@@ -1,0 +1,1 @@
+This is a branch used to followup angular course by rahul shetty
