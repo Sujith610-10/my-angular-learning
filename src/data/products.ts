@@ -15,7 +15,7 @@ export const products = [
       quantity: 4,
       status: '2 left',
       description: "this course help us to understand automation testing",
-      imgaddress : "https://rahulshettyacademy.com/rs_admin/public/images/courses/cypress-modern-automation-testing-from-scratch-framework_1609261074_azure.jpg"
+      imgaddress : "https://logowik.com/content/uploads/images/t_appium9030.jpg"
     },
     {
       id: 3,

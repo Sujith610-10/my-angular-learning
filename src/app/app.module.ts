@@ -5,12 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductDetialsComponent } from './product-detials/product-detials.component';
 import { AlertDetailsComponent } from './alert-details/alert-details.component';
+import { ComparisonCardComponent } from './comparison-card/comparison-card.component';
+import { ProductShopComponent } from './product-shop/product-shop.component';
+import { LandingpageComponent } from './landingpage/landingpage.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductDetialsComponent,
-    AlertDetailsComponent
+    AlertDetailsComponent,
+    ComparisonCardComponent,
+    ProductShopComponent,
+    LandingpageComponent
   ],
   imports: [
     BrowserModule,

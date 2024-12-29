@@ -1,4 +1,4 @@
-/* From Uiverse.io by Galahhad */ 
+/* Green Toggle Switch Starts Here */ 
 .switch {
     /* switch */
     --switch-width: 46px;
@@ -140,3 +140,5 @@
     -webkit-box-shadow: var(--circle-checked-shadow);
     box-shadow: var(--circle-checked-shadow);
   }
+
+  /* Green Toggle Switch Ends Here */ 

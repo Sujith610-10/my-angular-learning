@@ -29,7 +29,7 @@
 
 <!-- Using Ng directives to loop through the product and displayed in webpage -->
 <div *ngFor = "let product of products">
-    <h2>{{product.name}}</h2>
+    <a [routerLink] = "['/products',product.id]">{{product.name}}</a>
     <p>{{product.price}}</p>
     <p>{{product.description}}</p>
 

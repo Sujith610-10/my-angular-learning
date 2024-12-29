@@ -1,2 +1,12 @@
 <p *ngIf="product.price<700">This Product is already in Discount</p>
-<button (click)="clickCheckAvailablity()" [disabled]="!isEnabled">Check Availablity</button>
+
+
+<ng-container *ngIf = "product.quantity > 0 then showCheckAvailablity else productNotAvailable"></ng-container>
+
+<ng-template #showCheckAvailablity>
+    <button class="btn btn-primary" (click)="clickCheckAvailablity()" [disabled]="!isEnabled">Check Availablity</button>
+</ng-template>
+
+<ng-template #productNotAvailable>
+    <p>Prooduct Not Available at this moment!</p>
+</ng-template>
