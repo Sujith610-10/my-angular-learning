@@ -9,4 +9,31 @@ import { Component } from '@angular/core';
 })
 export class ComparisonCardComponent {
 
+  isPainting : Boolean = false;
+  isElevation : Boolean = false;
+  isInterior : Boolean = false;
+  isStructure : Boolean = false;
+
+  constructor(){
+
+  }
+
+  ngOnInit():void{
+
+  }
+
+  togglePaint(){
+    this.isPainting = !this.isPainting;
+  }
+
+  toggleElevation(){
+    this.isElevation = !this.isElevation;
+  }
+  toggleInterior(){
+    this.isInterior = !this.isInterior;
+  }
+  toggleStructure(){
+    this.isStructure = !this.isStructure;
+  }
+
 }

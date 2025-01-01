@@ -1,1 +1,133 @@
-<p>comparison-card works!</p>
+<div class="page-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4" id="subscription-card">
+                <div class="row" id="subs-card">
+                    <div class="plan-header">Standard Package</div>
+                    <p class="plan-desc">Perfect for 2200 / sft</p>
+                    <button>Talk to Us</button>
+                    <button class="subscription-dropdown-cta" (click)="togglePaint()">Design & Drawing
+                        <span>{{ this.isPainting ? '▼' : '▲' }}</span>
+                    </button>
+
+                    <div *ngIf=this.isPainting class="drp-value">
+                        <ol>
+                            <li>2D Floor Plans&nbsp;</li>
+                            <li>3D Elevations All Sides &amp; Walkthrough&nbsp;</li>
+                            <li>Structural Drawing&nbsp;</li>
+                            <li>Plumbing &amp; Electrical Layout&nbsp;</li>
+                            <li>Furniture Layout&nbsp;</li>
+                            <li>Working Drawings For Execution, Schedule Of Openings &amp; Sectional Drawings</li>
+                        </ol>
+                    </div>
+
+                    <button class="subscription-dropdown-cta" (click)="toggleElevation()">Elevation</button>
+                    <div *ngIf=this.isElevation class="drp-value">Elevation
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo laboriosam dignissimos, nam
+                        deserunt
+                        voluptatum distinctio dolores, architecto sapiente praesentium adipisci, quos odio laborum
+                        explicabo? Accusantium nesciunt vero vel ullam asperiores.
+                    </div>
+
+
+                    <button class="subscription-dropdown-cta" (click)="toggleInterior()">Interior Design</button>
+                    <div *ngIf=this.isInterior class="drp-value">Interior
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo laboriosam dignissimos, nam
+                        deserunt
+                        voluptatum distinctio dolores, architecto sapiente praesentium adipisci, quos odio laborum
+                        explicabo? Accusantium nesciunt vero vel ullam asperiores.
+                    </div>
+
+
+                    <button class="subscription-dropdown-cta" (click)="toggleStructure()">Structural Analysis</button>
+                    <div *ngIf=this.isStructure class="drp-value">Structure
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo laboriosam dignissimos, nam
+                        deserunt
+                        voluptatum distinctio dolores, architecto sapiente praesentium adipisci, quos odio laborum
+                        explicabo? Accusantium nesciunt vero vel ullam asperiores.
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="row" id="subs-card">
+                    <div class="plan-header">Premium Package</div>
+                    <p class="plan-desc">Perfect for 2600 / sft</p>
+                    <button>Talk to Us</button>
+                    <button class="subscription-dropdown-cta" (click)="togglePaint()">Painting</button>
+                    <div *ngIf=this.isPainting class="drp-value">Painting
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo laboriosam dignissimos, nam
+                        deserunt
+                        voluptatum distinctio dolores, architecto sapiente praesentium adipisci, quos odio laborum
+                        explicabo? Accusantium nesciunt vero vel ullam asperiores.
+                    </div>
+
+                    <button class="subscription-dropdown-cta" (click)="toggleElevation()">Elevation</button>
+                    <div *ngIf=this.isElevation class="drp-value">Elevation
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo laboriosam dignissimos, nam
+                        deserunt
+                        voluptatum distinctio dolores, architecto sapiente praesentium adipisci, quos odio laborum
+                        explicabo? Accusantium nesciunt vero vel ullam asperiores.
+                    </div>
+
+
+                    <button class="subscription-dropdown-cta" (click)="toggleInterior()">Interior Design</button>
+                    <div *ngIf=this.isInterior class="drp-value">Interior
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo laboriosam dignissimos, nam
+                        deserunt
+                        voluptatum distinctio dolores, architecto sapiente praesentium adipisci, quos odio laborum
+                        explicabo? Accusantium nesciunt vero vel ullam asperiores.
+                    </div>
+
+
+                    <button class="subscription-dropdown-cta" (click)="toggleStructure()">Structural Analysis</button>
+                    <div *ngIf=this.isStructure class="drp-value">Structure
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo laboriosam dignissimos, nam
+                        deserunt
+                        voluptatum distinctio dolores, architecto sapiente praesentium adipisci, quos odio laborum
+                        explicabo? Accusantium nesciunt vero vel ullam asperiores.
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="row" id="subs-card">
+                    <div class="plan-header">Luxury Package</div>
+                    <p class="plan-desc">Perfect for 2900 / sft</p>
+                    <button>Talk to Us</button>
+                    <button class="subscription-dropdown-cta" (click)="togglePaint()">Painting</button>
+                    <div *ngIf=this.isPainting class="drp-value">Painting
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo laboriosam dignissimos, nam
+                        deserunt
+                        voluptatum distinctio dolores, architecto sapiente praesentium adipisci, quos odio laborum
+                        explicabo? Accusantium nesciunt vero vel ullam asperiores.
+                    </div>
+
+                    <button class="subscription-dropdown-cta" (click)="toggleElevation()">Elevation</button>
+                    <div *ngIf=this.isElevation class="drp-value">Elevation
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo laboriosam dignissimos, nam
+                        deserunt
+                        voluptatum distinctio dolores, architecto sapiente praesentium adipisci, quos odio laborum
+                        explicabo? Accusantium nesciunt vero vel ullam asperiores.
+                    </div>
+
+
+                    <button class="subscription-dropdown-cta" (click)="toggleInterior()">Interior Design</button>
+                    <div *ngIf=this.isInterior class="drp-value">Interior
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo laboriosam dignissimos, nam
+                        deserunt
+                        voluptatum distinctio dolores, architecto sapiente praesentium adipisci, quos odio laborum
+                        explicabo? Accusantium nesciunt vero vel ullam asperiores.
+                    </div>
+
+
+                    <button class="subscription-dropdown-cta" (click)="toggleStructure()">Structural Analysis</button>
+                    <div *ngIf=this.isStructure class="drp-value">Structure
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo laboriosam dignissimos, nam
+                        deserunt
+                        voluptatum distinctio dolores, architecto sapiente praesentium adipisci, quos odio laborum
+                        explicabo? Accusantium nesciunt vero vel ullam asperiores.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
