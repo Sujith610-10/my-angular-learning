@@ -25,9 +25,9 @@
 }
 
 div#subscription-card {
-    background-color: #cdf1db;
+    background-color: #f3f8f5;
     border-radius: 8px;
-
+    padding-bottom:10px;
 }
 
 .plan-header {
@@ -58,4 +58,20 @@ button.subscription-dropdown-cta:hover {
     background: #21867A;
     color: white;
     transition: background 1s;
+}
+
+div#contact-us-btn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+
+button#contact-us {
+    border: none;
+    color: white;
+    background-color: #3a50df;
+    width: 198px;
+    height: 42px;
+    border-radius: 8px;
 }
