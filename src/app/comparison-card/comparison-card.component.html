@@ -6,7 +6,7 @@
                     <div class="plan-header">Standard Package</div>
                     <p class="plan-desc">Perfect for 2200 / sft</p>
                     <div id="contact-us-btn">
-                        <button id="contact-us">Talk to Us</button>
+                        <button id="contact-us" (click)="connectUs()">Talk to Us</button>
                     </div>
                     <button class="subscription-dropdown-cta" (click)="togglePaint()">Design & Drawing
                         <span>{{ this.isPainting ? '▼' : '▲' }}</span>
@@ -50,17 +50,26 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4" id="subscription-card">
                 <div class="row" id="subs-card">
                     <div class="plan-header">Premium Package</div>
                     <p class="plan-desc">Perfect for 2600 / sft</p>
-                    <button>Talk to Us</button>
-                    <button class="subscription-dropdown-cta" (click)="togglePaint()">Painting</button>
-                    <div *ngIf=this.isPainting class="drp-value">Painting
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo laboriosam dignissimos, nam
-                        deserunt
-                        voluptatum distinctio dolores, architecto sapiente praesentium adipisci, quos odio laborum
-                        explicabo? Accusantium nesciunt vero vel ullam asperiores.
+                    <div id="contact-us-btn">
+                        <button id="contact-us" (click)="connectUs()">Talk to Us</button>
+                    </div>
+                    <button class="subscription-dropdown-cta" (click)="togglePaint()">Design & Drawing
+                        <span>{{ this.isPainting ? '▼' : '▲' }}</span>
+                    </button>
+
+                    <div *ngIf=this.isPainting class="drp-value">
+                        <ol>
+                            <li>2D Floor Plans&nbsp;</li>
+                            <li>3D Elevations All Sides &amp; Walkthrough&nbsp;</li>
+                            <li>Structural Drawing&nbsp;</li>
+                            <li>Plumbing &amp; Electrical Layout&nbsp;</li>
+                            <li>Furniture Layout&nbsp;</li>
+                            <li>Working Drawings For Execution, Schedule Of Openings &amp; Sectional Drawings</li>
+                        </ol>
                     </div>
 
                     <button class="subscription-dropdown-cta" (click)="toggleElevation()">Elevation</button>
@@ -90,17 +99,26 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4" id="subscription-card">
                 <div class="row" id="subs-card">
                     <div class="plan-header">Luxury Package</div>
                     <p class="plan-desc">Perfect for 2900 / sft</p>
-                    <button>Talk to Us</button>
-                    <button class="subscription-dropdown-cta" (click)="togglePaint()">Painting</button>
-                    <div *ngIf=this.isPainting class="drp-value">Painting
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo laboriosam dignissimos, nam
-                        deserunt
-                        voluptatum distinctio dolores, architecto sapiente praesentium adipisci, quos odio laborum
-                        explicabo? Accusantium nesciunt vero vel ullam asperiores.
+                    <div id="contact-us-btn">
+                        <button id="contact-us" (click)="connectUs()">Talk to Us</button>
+                    </div>
+                    <button class="subscription-dropdown-cta" (click)="togglePaint()">Design & Drawing
+                        <span>{{ this.isPainting ? '▼' : '▲' }}</span>
+                    </button>
+
+                    <div *ngIf=this.isPainting class="drp-value">
+                        <ol>
+                            <li>2D Floor Plans&nbsp;</li>
+                            <li>3D Elevations All Sides &amp; Walkthrough&nbsp;</li>
+                            <li>Structural Drawing&nbsp;</li>
+                            <li>Plumbing &amp; Electrical Layout&nbsp;</li>
+                            <li>Furniture Layout&nbsp;</li>
+                            <li>Working Drawings For Execution, Schedule Of Openings &amp; Sectional Drawings</li>
+                        </ol>
                     </div>
 
                     <button class="subscription-dropdown-cta" (click)="toggleElevation()">Elevation</button>

@@ -36,4 +36,9 @@ export class ComparisonCardComponent {
     this.isStructure = !this.isStructure;
   }
 
+
+  connectUs(){
+    window.location.href = "https://www.instagram.com/dlite_studio/";
+  }
+
 }
